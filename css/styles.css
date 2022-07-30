@@ -361,6 +361,10 @@ img {
     fill: currentColor;
 }
 
+.clients-title {
+    margin-bottom: 50px;
+}
+
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
