@@ -146,6 +146,8 @@ img {
 }
 
 .header-contacts-link {
+    display: flex;
+    align-items: center;
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
@@ -159,6 +161,11 @@ img {
     color: var(--accent-color);
 }
 
+.contacts-icon {
+    margin-right: 10PX;
+    fill: currentColor;
+}
+
 .hero {
     max-width: 1600px;
     padding-top: 200px;
@@ -170,7 +177,6 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-   
 }
 
 .hero-title {
@@ -242,7 +248,6 @@ img {
 .about-picture-link {
     width: 270px;
     height: 120px;
-    color: #212121;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,7 +287,6 @@ img {
     margin-right: auto;
     margin-bottom: 50px;
     margin-left: auto;
-
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -304,7 +308,6 @@ img {
     margin-right: auto;
     margin-bottom: 50px;
     margin-left: auto;
-
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -318,6 +321,12 @@ img {
     gap: 30px;
 }
 
+.subject-item {
+    background: var(--first-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .subject-content {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -325,7 +334,6 @@ img {
 
 .subject-title {
     margin-bottom: 10px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -351,7 +359,21 @@ img {
 .subject-soc-link {
     width: 44px;
     height: 44px;
+    border-radius: 50%;
     color: #AFB1B8;
+    background-color: var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subject-soc-link:hover,
+.subject-soc-link:focus {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--first-color);
+    background-color: var(--accent-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -362,7 +384,48 @@ img {
 }
 
 .clients-title {
+    margin-right: auto;
     margin-bottom: 50px;
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--first-text-color);
+}
+
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #2196F3;
+    border-radius: 4px;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clients-icon {
+    fill: currentColor;
 }
 
 .footer {
@@ -371,10 +434,18 @@ img {
     background: #2F303A;
 }
 
+.footer-conteiner {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-contacts {
+    margin-right: 70px;
+}
+
 .footer-logo {
     padding: 0;
     margin-bottom: 20px;
-
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -443,6 +514,18 @@ img {
     color: var(--accent-color);
 }
 
+.pre-footer-soc {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--first-color);
+}
+
 .footer-soc-list {
     display: flex;
     justify-content: center;
@@ -450,12 +533,26 @@ img {
 }
 
 .footer-soc-link {
-    width: 44px;
-    height: 44px;
-    color: #AFB1B8;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: #2196F3;
 }
 
 .footer-soc-icon {
@@ -505,6 +602,12 @@ img {
     gap: 30px;
 }
 
+.project-link:hover,
+.project-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project {
     border: 1px solid #EEEEEE;
     border-top: none;
@@ -512,7 +615,6 @@ img {
 
 .project-title {
     margin-bottom: 4px;
-
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
