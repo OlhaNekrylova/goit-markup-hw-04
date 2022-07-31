@@ -170,8 +170,7 @@ img {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    display: flex;
-    flex-grow: 1;
+    margin: 0 auto;
     background-color: #2F303A;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
@@ -211,6 +210,7 @@ img {
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
        
     cursor: pointer;
 }
@@ -238,30 +238,29 @@ img {
     cursor: pointer;
 }
 
-.about-picture-list {
-    margin-bottom: 30px;
+.about-list {
     display: flex;
+    align-items: flex-start;
     justify-content: center;
     gap: 30px;
+    margin-bottom: 30px;
 }
 
-.about-picture-link {
-    width: 270px;
-    height: 120px;
+.about-picture {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
 }
 
 .about-picture-icon {
     fill: currentColor;
 }
 
-.about-list {
-    display: flex;
-    gap: 30px;
-}
-     
 .about-title {
     margin-bottom: 10px;
     font-weight: 700;
@@ -343,6 +342,7 @@ img {
 }
 
 .subject-text {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -515,8 +515,6 @@ img {
 }
 
 .pre-footer-soc {
-    display: flex;
-    justify-content: flex-start;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -568,6 +566,7 @@ img {
 
 .menu-button {
     display: flex;
+    padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -577,13 +576,15 @@ img {
 
     background: #F5F4FA;
     border-radius: 4px;
-    
+    border: none;
+
     cursor: pointer;
 }
 
 .menu-button:hover,
 .menu-button:focus {
     display: flex;
+    padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -594,6 +595,7 @@ img {
     background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    border: none;
 }
 
 .project-list {
