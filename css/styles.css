@@ -162,7 +162,7 @@ img {
 }
 
 .contacts-icon {
-    margin-right: 10PX;
+    margin-right: 10px;
     fill: currentColor;
 }
 
@@ -240,16 +240,15 @@ img {
 
 .about-list {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
+    align-items: flex-start;
     gap: 30px;
-    margin-bottom: 30px;
 }
 
 .about-picture {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: flex-start;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
@@ -416,7 +415,7 @@ img {
 .clients-link:focus {
     width: 170px;
     height: 92px;
-    border: 1px solid #2196F3;
+    border: 1px solid var(--accent-color);
     border-radius: 4px;
     color: var(--accent-color);
     display: flex;
@@ -537,7 +536,7 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: #FFFFFF;
+    color: var(--first-color);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -549,8 +548,8 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--first-color);
+    background-color: var(--accent-color);
 }
 
 .footer-soc-icon {
